@@ -2,11 +2,11 @@ package handler
 
 import (
 	"context"
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/volume/domain/model"
-	"Micro-v3-k8s/volume/domain/service"
 	log "github.com/asim/go-micro/v3/logger"
-	volume "Micro-v3-k8s/volume/proto/volume"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volume/domain/model"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volume/domain/service"
+	volume "github.com/jackjie2016/micro-v3-manger-k8s/volume/proto/volume"
 	"strconv"
 )
 
@@ -100,5 +100,3 @@ func (e *VolumeHandler) FindAllVolume(ctx context.Context, req *volume.FindAll, 
 	}
 	return nil
 }
-
-

@@ -1,20 +1,20 @@
 package main
 
 import (
-	"Micro-v3-k8s/base/handler"
-	hystrix2 "Micro-v3-k8s/base/plugin/hystrix"
-	base "Micro-v3-k8s/base/proto"
 	"github.com/asim/go-micro/plugins/registry/consul/v3"
 	"github.com/asim/go-micro/v3"
+	"github.com/jackjie2016/micro-v3-manger-k8s/base/handler"
+	hystrix2 "github.com/jackjie2016/micro-v3-manger-k8s/base/plugin/hystrix"
+	base "github.com/jackjie2016/micro-v3-manger-k8s/base/proto"
 	"github.com/opentracing/opentracing-go"
 
-	"Micro-v3-k8s/common"
 	"fmt"
 	"github.com/afex/hystrix-go/hystrix"
 	ratelimit "github.com/asim/go-micro/plugins/wrapper/ratelimiter/uber/v3"
 	opentracing2 "github.com/asim/go-micro/plugins/wrapper/trace/opentracing/v3"
 	log "github.com/asim/go-micro/v3/logger"
 	"github.com/asim/go-micro/v3/registry"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"net"

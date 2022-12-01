@@ -1,8 +1,8 @@
 package repository
 
 import (
+	"github.com/jackjie2016/micro-v3-manger-k8s/volume/domain/model"
 	"github.com/jinzhu/gorm"
-	"Micro-v3-k8s/volume/domain/model"
 )
 
 //创建需要实现的接口
@@ -60,4 +60,3 @@ func (u *VolumeRepository) UpdateVolume(volume *model.Volume) error {
 func (u *VolumeRepository) FindAll() (volumeAll []model.Volume, err error) {
 	return volumeAll, u.mysqlDb.Find(&volumeAll).Error
 }
-

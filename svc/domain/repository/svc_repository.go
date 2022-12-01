@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/svc/domain/model"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/svc/domain/model"
 	"github.com/jinzhu/gorm"
 )
 
@@ -84,4 +84,3 @@ func (u *SvcRepository) UpdateSvc(svc *model.Svc) error {
 func (u *SvcRepository) FindAll() (svcAll []model.Svc, err error) {
 	return svcAll, u.mysqlDb.Find(&svcAll).Error
 }
-

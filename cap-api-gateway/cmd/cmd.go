@@ -2,9 +2,9 @@
 package cmd
 
 import (
-	"Micro-v3-k8s/cap-api-gateway/gateway"
 	"fmt"
 	"github.com/asim/go-micro/plugins/registry/consul/v3"
+	"github.com/jackjie2016/micro-v3-manger-k8s/cap-api-gateway/gateway"
 	"math/rand"
 	"strings"
 	"time"

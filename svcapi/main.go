@@ -1,8 +1,6 @@
 package main
 
 import (
-	"Micro-v3-k8s/common"
-	go_micro_service_svc "Micro-v3-k8s/svc/proto/svc"
 	"fmt"
 	"github.com/afex/hystrix-go/hystrix"
 	"github.com/asim/go-micro/plugins/registry/consul/v3"
@@ -11,18 +9,20 @@ import (
 	opentracing2 "github.com/asim/go-micro/plugins/wrapper/trace/opentracing/v3"
 	"github.com/asim/go-micro/v3"
 	"github.com/asim/go-micro/v3/server"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	go_micro_service_svc "github.com/jackjie2016/micro-v3-manger-k8s/svc/proto/svc"
 
 	"github.com/asim/go-micro/v3/registry"
 
-	"Micro-v3-k8s/svcApi/handler"
-	hystrix2 "Micro-v3-k8s/svcApi/plugin/hystrix"
+	"github.com/jackjie2016/micro-v3-manger-k8s/svcApi/handler"
+	hystrix2 "github.com/jackjie2016/micro-v3-manger-k8s/svcApi/plugin/hystrix"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/opentracing/opentracing-go"
 	"net"
 	"net/http"
 	"strconv"
 
-	svcApi "Micro-v3-k8s/svcApi/proto/svcApi"
+	svcApi "github.com/jackjie2016/micro-v3-manger-k8s/svcApi/proto/svcApi"
 )
 
 var (

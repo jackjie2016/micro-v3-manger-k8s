@@ -1,8 +1,6 @@
 package main
 
 import (
-	"Micro-v3-k8s/common"
-	go_micro_service_volume "Micro-v3-k8s/volume/proto/volume"
 	"fmt"
 	"github.com/afex/hystrix-go/hystrix"
 	"github.com/asim/go-micro/plugins/registry/consul/v3"
@@ -12,16 +10,18 @@ import (
 	"github.com/asim/go-micro/v3"
 	"github.com/asim/go-micro/v3/registry"
 	"github.com/asim/go-micro/v3/server"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	go_micro_service_volume "github.com/jackjie2016/micro-v3-manger-k8s/volume/proto/volume"
 	"github.com/opentracing/opentracing-go"
 
-	"Micro-v3-k8s/volumeApi/handler"
-	hystrix2 "Micro-v3-k8s/volumeApi/plugin/hystrix"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volumeApi/handler"
+	hystrix2 "github.com/jackjie2016/micro-v3-manger-k8s/volumeApi/plugin/hystrix"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"net"
 	"net/http"
 	"strconv"
 
-	volumeApi "Micro-v3-k8s/volumeApi/proto/volumeApi"
+	volumeApi "github.com/jackjie2016/micro-v3-manger-k8s/volumeApi/proto/volumeApi"
 )
 
 var (

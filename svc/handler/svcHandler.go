@@ -2,11 +2,11 @@ package handler
 
 import (
 	"context"
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/svc/domain/model"
-	"Micro-v3-k8s/svc/domain/service"
 	log "github.com/asim/go-micro/v3/logger"
-	svc "Micro-v3-k8s/svc/proto/svc"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/svc/domain/model"
+	"github.com/jackjie2016/micro-v3-manger-k8s/svc/domain/service"
+	svc "github.com/jackjie2016/micro-v3-manger-k8s/svc/proto/svc"
 	"strconv"
 )
 
@@ -119,5 +119,3 @@ func (e *SvcHandler) FindAllSvc(ctx context.Context, req *svc.FindAll, rsp *svc.
 	}
 	return nil
 }
-
-

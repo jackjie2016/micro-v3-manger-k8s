@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"errors"
 
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/routeApi/form"
 	log "github.com/asim/go-micro/v3/logger"
-	route "Micro-v3-k8s/route/proto/route"
-	routeApi "Micro-v3-k8s/routeApi/proto/routeApi"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	route "github.com/jackjie2016/micro-v3-manger-k8s/route/proto/route"
+	"github.com/jackjie2016/micro-v3-manger-k8s/routeApi/form"
+	routeApi "github.com/jackjie2016/micro-v3-manger-k8s/routeApi/proto/routeApi"
 	"strconv"
 )
 
@@ -133,4 +133,3 @@ func (e *RouteApi) Call(ctx context.Context, req *routeApi.Request, rsp *routeAp
 	rsp.Body = string(b)
 	return nil
 }
-

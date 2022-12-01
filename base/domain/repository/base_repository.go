@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"Micro-v3-k8s/base/domain/model"
+	"github.com/jackjie2016/micro-v3-manger-k8s/base/domain/model"
 	"github.com/jinzhu/gorm"
 )
 

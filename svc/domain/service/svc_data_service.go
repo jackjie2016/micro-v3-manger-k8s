@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 	"errors"
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/svc/domain/model"
-	"Micro-v3-k8s/svc/domain/repository"
-	"Micro-v3-k8s/svc/proto/svc"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/svc/domain/model"
+	"github.com/jackjie2016/micro-v3-manger-k8s/svc/domain/repository"
+	"github.com/jackjie2016/micro-v3-manger-k8s/svc/proto/svc"
 	v1 "k8s.io/api/core/v1"
 	v12 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
@@ -154,4 +154,3 @@ func (u *SvcDataService) FindSvcByID(svcID int64) (*model.Svc, error) {
 func (u *SvcDataService) FindAllSvc() ([]model.Svc, error) {
 	return u.SvcRepository.FindAll()
 }
-

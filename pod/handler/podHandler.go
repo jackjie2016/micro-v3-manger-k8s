@@ -2,10 +2,10 @@ package handler
 
 import (
 	"context"
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/pod/domain/model"
-	"Micro-v3-k8s/pod/domain/service"
-	"Micro-v3-k8s/pod/proto/pod"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/domain/model"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/domain/service"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/proto/pod"
 	"strconv"
 )
 
@@ -119,6 +119,3 @@ func (e *PodHandler) FindAllPod(ctx context.Context, req *pod.FindAll, rsp *pod.
 	}
 	return nil
 }
-
-
-

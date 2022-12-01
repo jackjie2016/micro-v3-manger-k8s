@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/pod/proto/pod"
-	from "Micro-v3-k8s/podApi/plugin/form"
-	"Micro-v3-k8s/podApi/proto/podApi"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/proto/pod"
+	from "github.com/jackjie2016/micro-v3-manger-k8s/podApi/plugin/form"
+	"github.com/jackjie2016/micro-v3-manger-k8s/podApi/proto/podApi"
 	"strconv"
 )
 

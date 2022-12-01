@@ -1,7 +1,7 @@
 package main
 
 import (
-	apiCmd "Micro-v3-k8s/cap-api-gateway/cmd"
+	apiCmd "github.com/jackjie2016/micro-v3-manger-k8s/cap-api-gateway/cmd"
 )
 
 func main() {

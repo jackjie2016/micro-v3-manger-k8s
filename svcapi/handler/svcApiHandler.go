@@ -4,11 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"Micro-v3-k8s/common"
-	svc "Micro-v3-k8s/svc/proto/svc"
-	from "Micro-v3-k8s/svcApi/plugin/form"
-	svcApi "Micro-v3-k8s/svcApi/proto/svcApi"
 	log "github.com/asim/go-micro/v3/logger"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	svc "github.com/jackjie2016/micro-v3-manger-k8s/svc/proto/svc"
+	from "github.com/jackjie2016/micro-v3-manger-k8s/svcApi/plugin/form"
+	svcApi "github.com/jackjie2016/micro-v3-manger-k8s/svcApi/proto/svcApi"
 	"strconv"
 )
 

@@ -1,12 +1,12 @@
 package service
 
 import (
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/pod/domain/model"
-	"Micro-v3-k8s/pod/domain/repository"
-	"Micro-v3-k8s/pod/proto/pod"
 	"context"
 	"errors"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/domain/model"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/domain/repository"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/proto/pod"
 	v1 "k8s.io/api/apps/v1"
 	v13 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"

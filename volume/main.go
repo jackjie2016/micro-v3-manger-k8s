@@ -1,15 +1,15 @@
 package main
 
 import (
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/volume/domain/repository"
 	"flag"
 	"fmt"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volume/domain/repository"
 	"path/filepath"
 
-	service2 "Micro-v3-k8s/volume/domain/service"
-	"Micro-v3-k8s/volume/handler"
-	volume "Micro-v3-k8s/volume/proto/volume"
+	service2 "github.com/jackjie2016/micro-v3-manger-k8s/volume/domain/service"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volume/handler"
+	volume "github.com/jackjie2016/micro-v3-manger-k8s/volume/proto/volume"
 	//"github.com/afex/hystrix-go/hystrix"
 	"github.com/asim/go-micro/plugins/registry/consul/v3"
 	ratelimit "github.com/asim/go-micro/plugins/wrapper/ratelimiter/uber/v3"
@@ -23,7 +23,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
-	//hystrix2 "Micro-v3-k8s/volume/plugin/hystrix"
+	//hystrix2 "github.com/jackjie2016/micro-v3-manger-k8s/volume/plugin/hystrix"
 	"strconv"
 )
 

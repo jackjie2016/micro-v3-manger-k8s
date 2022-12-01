@@ -2,8 +2,8 @@ package from
 
 import (
 	"errors"
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/svcApi/proto/svcApi"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/svcApi/proto/svcApi"
 	"strings"
 
 	"reflect"
@@ -84,4 +84,3 @@ func TypeConversion(value string, ntype string) (reflect.Value, error) {
 
 	return reflect.ValueOf(value), errors.New("未知的类型：" + ntype)
 }
-

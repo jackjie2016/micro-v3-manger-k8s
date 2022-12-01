@@ -1,12 +1,6 @@
 package main
 
 import (
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/pod/domain/repository"
-	service2 "Micro-v3-k8s/pod/domain/service"
-	"Micro-v3-k8s/pod/handler"
-	hystrix2 "Micro-v3-k8s/pod/plugin/hystrix"
-	"Micro-v3-k8s/pod/proto/pod"
 	"flag"
 	"fmt"
 	"github.com/afex/hystrix-go/hystrix"
@@ -16,6 +10,12 @@ import (
 	"github.com/asim/go-micro/v3"
 	"github.com/asim/go-micro/v3/registry"
 	"github.com/asim/go-micro/v3/server"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/domain/repository"
+	service2 "github.com/jackjie2016/micro-v3-manger-k8s/pod/domain/service"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/handler"
+	hystrix2 "github.com/jackjie2016/micro-v3-manger-k8s/pod/plugin/hystrix"
+	"github.com/jackjie2016/micro-v3-manger-k8s/pod/proto/pod"
 	"github.com/jinzhu/gorm"
 	"github.com/opentracing/opentracing-go"
 	"k8s.io/client-go/kubernetes"

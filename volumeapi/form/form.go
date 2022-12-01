@@ -1,9 +1,9 @@
 package form
 
 import (
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/volumeApi/proto/volumeApi"
 	"errors"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volumeApi/proto/volumeApi"
 	"strings"
 
 	"reflect"

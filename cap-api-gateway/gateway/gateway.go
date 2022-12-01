@@ -1,11 +1,11 @@
 package gateway
 
 import (
-	"Micro-v3-k8s/cap-api-gateway/internal/handler"
-	"Micro-v3-k8s/cap-api-gateway/internal/helper"
-	"Micro-v3-k8s/cap-api-gateway/internal/namespace"
-	rrmicro "Micro-v3-k8s/cap-api-gateway/internal/resolver/api"
-	"Micro-v3-k8s/cap-api-gateway/stats"
+	"github.com/jackjie2016/micro-v3-manger-k8s/cap-api-gateway/internal/handler"
+	"github.com/jackjie2016/micro-v3-manger-k8s/cap-api-gateway/internal/helper"
+	"github.com/jackjie2016/micro-v3-manger-k8s/cap-api-gateway/internal/namespace"
+	rrmicro "github.com/jackjie2016/micro-v3-manger-k8s/cap-api-gateway/internal/resolver/api"
+	"github.com/jackjie2016/micro-v3-manger-k8s/cap-api-gateway/stats"
 
 	"fmt"
 	"github.com/asim/go-micro/plugins/registry/consul/v3"

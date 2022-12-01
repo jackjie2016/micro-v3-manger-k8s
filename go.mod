@@ -1,4 +1,4 @@
-module Micro-v3-k8s
+module github.com/jackjie2016/micro-v3-manger-k8s
 
 go 1.18
 

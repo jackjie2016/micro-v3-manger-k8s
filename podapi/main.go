@@ -1,11 +1,6 @@
 package main
 
 import (
-	"Micro-v3-k8s/common"
-	go_micro_service_pod "Micro-v3-k8s/pod/proto/pod"
-	"Micro-v3-k8s/podApi/handler"
-	hystrix2 "Micro-v3-k8s/podApi/plugin/hystrix"
-	"Micro-v3-k8s/podApi/proto/podApi"
 	"fmt"
 	"github.com/afex/hystrix-go/hystrix"
 	"github.com/asim/go-micro/plugins/registry/consul/v3"
@@ -14,6 +9,11 @@ import (
 	opentracing2 "github.com/asim/go-micro/plugins/wrapper/trace/opentracing/v3"
 	"github.com/asim/go-micro/v3"
 	"github.com/asim/go-micro/v3/registry"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	go_micro_service_pod "github.com/jackjie2016/micro-v3-manger-k8s/pod/proto/pod"
+	"github.com/jackjie2016/micro-v3-manger-k8s/podApi/handler"
+	hystrix2 "github.com/jackjie2016/micro-v3-manger-k8s/podApi/plugin/hystrix"
+	"github.com/jackjie2016/micro-v3-manger-k8s/podApi/proto/podApi"
 
 	"github.com/asim/go-micro/v3/server"
 	"github.com/opentracing/opentracing-go"

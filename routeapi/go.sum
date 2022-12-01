@@ -24,10 +24,10 @@ cloud.google.com/go/storage v1.5.0/go.mod h1:tpKbwo567HUNpVclU5sGELwQWBDZ8gh0Zeo
 cloud.google.com/go/storage v1.6.0/go.mod h1:N7U0C8pVQ/+NIKOBQyamJIeKQKkZ+mxpohlUTyfDhBk=
 contrib.go.opencensus.io/exporter/ocagent v0.4.12/go.mod h1:450APlNTSR6FrvC3CTRqYosuDstRB9un7SOx2k/9ckA=
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
-Micro-v3-k8s/common v0.0.0-20211109033740-848962d2b28a h1:LkgehZntDMPO2CSBWWSGK5fR/hMqEjhfT2wy0eKUFPg=
-Micro-v3-k8s/common v0.0.0-20211109033740-848962d2b28a/go.mod h1:zIpOe28FLRAyjLWvoRnsKkqL5QgIzwiV5Rd8JACQh74=
-Micro-v3-k8s/route v0.0.0-20220619151331-c94123731130 h1:zNbMXxAdoT+bI9DIumZFVukPKAJIWNiMZ9zJvcE2P1g=
-Micro-v3-k8s/route v0.0.0-20220619151331-c94123731130/go.mod h1:IjsM3IpAungkW3OUbRvInggSnjwFh2Co2MF0FKjDJJw=
+github.com/jackjie2016/micro-v3-manger-k8s/common v0.0.0-20211109033740-848962d2b28a h1:LkgehZntDMPO2CSBWWSGK5fR/hMqEjhfT2wy0eKUFPg=
+github.com/jackjie2016/micro-v3-manger-k8s/common v0.0.0-20211109033740-848962d2b28a/go.mod h1:zIpOe28FLRAyjLWvoRnsKkqL5QgIzwiV5Rd8JACQh74=
+github.com/jackjie2016/micro-v3-manger-k8s/route v0.0.0-20220619151331-c94123731130 h1:zNbMXxAdoT+bI9DIumZFVukPKAJIWNiMZ9zJvcE2P1g=
+github.com/jackjie2016/micro-v3-manger-k8s/route v0.0.0-20220619151331-c94123731130/go.mod h1:IjsM3IpAungkW3OUbRvInggSnjwFh2Co2MF0FKjDJJw=
 github.com/Azure/azure-sdk-for-go v32.4.0+incompatible/go.mod h1:9XXNKU+eRnpl9moKnB4QOLf1HestfXbmab5FXxiDBjc=
 github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78/go.mod h1:LmzpDX56iTiv29bbRTIsUNlaFfuhWRQBWjQdVyAevI8=
 github.com/Azure/go-autorest v14.2.0+incompatible/go.mod h1:r+4oMnoxhatjLLJ6zxSWATqVooLgysK6ZNox3g/xq24=

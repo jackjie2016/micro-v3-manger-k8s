@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"Micro-v3-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/route/domain/model"
 	"github.com/jinzhu/gorm"
-	"Micro-v3-k8s/route/domain/model"
 )
 
 //创建需要实现的接口
@@ -84,4 +84,3 @@ func (u *RouteRepository) UpdateRoute(route *model.Route) error {
 func (u *RouteRepository) FindAll() (routeAll []model.Route, err error) {
 	return routeAll, u.mysqlDb.Preload("RoutePath").Find(&routeAll).Error
 }
-

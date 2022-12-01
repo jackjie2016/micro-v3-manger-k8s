@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"Micro-v3-k8s/base/domain/service"
-	base "Micro-v3-k8s/base/proto"
+	"github.com/jackjie2016/micro-v3-manger-k8s/base/domain/service"
+	base "github.com/jackjie2016/micro-v3-manger-k8s/base/proto"
 
 	"context"
 	log "github.com/asim/go-micro/v3/logger"

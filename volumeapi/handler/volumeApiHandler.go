@@ -1,14 +1,14 @@
 package handler
 
 import (
-	"Micro-v3-k8s/common"
-	volume "Micro-v3-k8s/volume/proto/volume"
-	"Micro-v3-k8s/volumeApi/form"
-	volumeApi "Micro-v3-k8s/volumeApi/proto/volumeApi"
 	"context"
 	"encoding/json"
 	"errors"
 	log "github.com/asim/go-micro/v3/logger"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	volume "github.com/jackjie2016/micro-v3-manger-k8s/volume/proto/volume"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volumeApi/form"
+	volumeApi "github.com/jackjie2016/micro-v3-manger-k8s/volumeApi/proto/volumeApi"
 	"strconv"
 )
 
@@ -115,4 +115,3 @@ func (e *VolumeApi) Call(ctx context.Context, req *volumeApi.Request, rsp *volum
 	rsp.Body = string(b)
 	return nil
 }
-

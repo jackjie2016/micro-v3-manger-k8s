@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 	"errors"
-	"Micro-v3-k8s/common"
-	"Micro-v3-k8s/volume/domain/model"
-	"Micro-v3-k8s/volume/domain/repository"
-	"Micro-v3-k8s/volume/proto/volume"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volume/domain/model"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volume/domain/repository"
+	"github.com/jackjie2016/micro-v3-manger-k8s/volume/proto/volume"
 	"k8s.io/api/apps/v1"
 	v12 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
@@ -169,4 +169,3 @@ func (u *VolumeDataService) FindVolumeByID(volumeID int64) (*model.Volume, error
 func (u *VolumeDataService) FindAllVolume() ([]model.Volume, error) {
 	return u.VolumeRepository.FindAll()
 }
-

@@ -40,8 +40,8 @@ make docker
 ## 6.开发流程
 #### 开发前准备
 * 使用 cap1573/cap-tool（需要添加ICODE）,项目工程目录生成工具。
-* cap1573/cap-v3 生成工具，proto，go-micro 编码生成工具。源码地址：https://Micro-v3-k8s/cap-v3
-* cap1573/cap-api-gateway，根据go-micro v3 改造后的统一网关。源码地址：https://Micro-v3-k8s/cap-api-gateway
+* cap1573/cap-v3 生成工具，proto，go-micro 编码生成工具。源码地址：https://github.com/jackjie2016/micro-v3-manger-k8s/cap-v3
+* cap1573/cap-api-gateway，根据go-micro v3 改造后的统一网关。源码地址：https://github.com/jackjie2016/micro-v3-manger-k8s/cap-api-gateway
 
 #### 1.开发服务端
 * 1.1 使用 cap-tool 完成项目工程目录生成

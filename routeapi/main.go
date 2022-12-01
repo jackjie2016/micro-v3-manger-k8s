@@ -1,8 +1,6 @@
 package main
 
 import (
-	"Micro-v3-k8s/common"
-	go_micro_service_route "Micro-v3-k8s/route/proto/route"
 	"fmt"
 	"github.com/afex/hystrix-go/hystrix"
 	"github.com/asim/go-micro/plugins/registry/consul/v3"
@@ -12,16 +10,18 @@ import (
 	"github.com/asim/go-micro/v3"
 	"github.com/asim/go-micro/v3/registry"
 	"github.com/asim/go-micro/v3/server"
+	"github.com/jackjie2016/micro-v3-manger-k8s/common"
+	go_micro_service_route "github.com/jackjie2016/micro-v3-manger-k8s/route/proto/route"
 
-	"Micro-v3-k8s/routeApi/handler"
-	hystrix2 "Micro-v3-k8s/routeApi/plugin/hystrix"
+	"github.com/jackjie2016/micro-v3-manger-k8s/routeApi/handler"
+	hystrix2 "github.com/jackjie2016/micro-v3-manger-k8s/routeApi/plugin/hystrix"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/opentracing/opentracing-go"
 	"net"
 	"net/http"
 	"strconv"
 
-	routeApi "Micro-v3-k8s/routeApi/proto/routeApi"
+	routeApi "github.com/jackjie2016/micro-v3-manger-k8s/routeApi/proto/routeApi"
 )
 
 var (
